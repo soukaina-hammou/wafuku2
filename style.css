@@ -1,0 +1,74 @@
+:root {
+        --cream: #FFF0C4;
+        --crimson: #8C1007;
+        --dark-crimson: #660B05;
+        --burgundy: #3E0703;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      h1,
+      h2,
+      .font-serif {
+        font-family: "Playfair Display", serif;
+      }
+      .bg-japan-cream {
+        background-color: var(--cream);
+      }
+      .text-japan-red {
+        color: var(--crimson);
+      }
+      .bg-japan-red {
+        background-color: var(--crimson);
+      }
+      .bg-japan-ink {
+        background-color: var(--burgundy);
+      }
+      /* Modern gradient hero overlay */
+      .hero-gradient {
+        background: linear-gradient(135deg, rgba(62,7,3,0.85) 0%, rgba(140,16,7,0.6) 50%, rgba(255,240,196,0.2) 100%);
+      }
+      /* Glass morphism nav */
+      .nav-glass {
+        background: rgba(255,240,196,0.75);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(140,16,7,0.12);
+      }
+      /* Accent underline animation */
+      .accent-line {
+        background: linear-gradient(90deg, var(--crimson), var(--dark-crimson));
+      }
+      /* Card hover glow */
+      .card-glow {
+        transition: box-shadow 0.4s ease, transform 0.4s ease;
+      }
+      .card-glow:hover {
+        box-shadow: 0 20px 60px rgba(140,16,7,0.18), 0 0 0 1px rgba(140,16,7,0.08);
+        transform: translateY(-6px);
+      }
+      /* Smooth gradient button */
+      .btn-gradient {
+        background: linear-gradient(135deg, var(--crimson), var(--dark-crimson));
+        transition: all 0.3s ease;
+      }
+      .btn-gradient:hover {
+        background: linear-gradient(135deg, var(--dark-crimson), var(--burgundy));
+        box-shadow: 0 8px 30px rgba(140,16,7,0.35);
+      }
+      /* Footer gradient */
+      .footer-gradient {
+        background: linear-gradient(180deg, var(--burgundy) 0%, #2a0502 100%);
+      }
+      /* Subtle text gradient */
+      .text-gradient {
+        background: linear-gradient(135deg, var(--crimson), var(--dark-crimson));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      /* Section divider */
+      .section-divider {
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(140,16,7,0.2), transparent);
+      }
