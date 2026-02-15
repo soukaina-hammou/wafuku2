@@ -7,53 +7,45 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-japan-cream overflow-x-hidden" style="color: var(--burgundy)">
+  <body class="bg-japan-cream overflow-x-hidden text-burgundy">
     <nav class="fixed w-full z-50 nav-glass">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
           <div class="flex-shrink-0">
             <span
-              class="text-3xl font-serif font-bold tracking-widest text-gradient"
-              >WAFUKU</span
-            >
+              class="text-3xl font-serif font-bold tracking-widest text-gradient">WAFUKU</span>
           </div>
 
           <div
-            class="hidden md:flex space-x-10 text-sm font-medium uppercase tracking-widest"
-          >
+            class="hidden md:flex space-x-10 text-sm font-medium uppercase tracking-widest">
             <a href="#home" class="hover:text-japan-red transition">Home</a>
-            <a href="#story" class="hover:text-japan-red transition"
-              >Our Story</a
-            >
-            <a href="#collections" class="hover:text-japan-red transition"
-              >Collections</a
-            >
-            <a href="#contact" class="hover:text-japan-red transition"
-              >Contact</a
-            >
+            <a href="#story" class="hover:text-japan-red transition">Our
+              Story</a>
+            <a href="#collections"
+              class="hover:text-japan-red transition">Collections</a>
+            <a href="#contact"
+              class="hover:text-japan-red transition">Contact</a>
           </div>
 
           <div class="md:hidden">
             <button
+              type="button"
               id="mobile-menu-button"
-              class="text-gray-900 focus:outline-none"
-            >
+              aria-label="Open mobile menu"
+              class="text-gray-900 focus:outline-none">
               <svg
                 class="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
+                stroke="currentColor">
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
+                  d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
           </div>
@@ -63,52 +55,41 @@
       <div id="mobile-menu" class="hidden md:hidden nav-glass">
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
           <a href="#home" class="block px-3 py-2 text-base font-medium">Home</a>
-          <a href="#story" class="block px-3 py-2 text-base font-medium"
-            >Our Story</a
-          >
-          <a href="#collections" class="block px-3 py-2 text-base font-medium"
-            >Collections</a
-          >
-          <a href="#contact" class="block px-3 py-2 text-base font-medium"
-            >Contact</a
-          >
+          <a href="#story" class="block px-3 py-2 text-base font-medium">Our
+            Story</a>
+          <a href="#collections"
+            class="block px-3 py-2 text-base font-medium">Collections</a>
+          <a href="#contact"
+            class="block px-3 py-2 text-base font-medium">Contact</a>
         </div>
       </div>
     </nav>
 
     <section
       id="home"
-      class="relative h-screen flex items-center justify-center overflow-hidden"
-    >
+      class="relative h-screen flex items-center justify-center overflow-hidden">
       <div class="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&q=80&w=2070"
           class="w-full h-full object-cover"
-          alt="Japanese Landscape"
-        />
+          alt="Japanese Landscape" />
         <div class="absolute inset-0 hero-gradient"></div>
       </div>
 
       <div class="relative z-10 text-center px-4">
         <span
-          class="block font-semibold tracking-[0.3em] uppercase mb-4"
-          style="color: #fff0c4"
-          >Timeless Tradition</span
-        >
+          class="block font-semibold tracking-[0.3em] uppercase mb-4 text-japan-cream">Timeless Tradition</span>
         <h1 class="text-6xl md:text-8xl font-bold mb-6 text-white">
           和服 WAFUKU
         </h1>
         <p
-          class="text-lg md:text-xl max-w-2xl mx-auto mb-10 italic"
-          style="color: rgba(255, 240, 196, 0.8)"
-        >
+          class="text-lg md:text-xl max-w-2xl mx-auto mb-10 italic text-japan-cream-80">
           Beyond the neon lights of Tokyo lies a silence that speaks through
           silk.
         </p>
         <a
           href="#collections"
-          class="btn-gradient text-white px-10 py-4 uppercase tracking-widest text-sm inline-block rounded-sm"
-        >
+          class="btn-gradient text-white px-10 py-4 uppercase tracking-widest text-sm inline-block rounded-sm">
           Explore Collection
         </a>
       </div>
@@ -116,23 +97,16 @@
 
     <section
       id="story"
-      class="py-24"
-      style="background: linear-gradient(180deg, #fff0c4 0%, #fff8e6 100%)"
-    >
+      class="py-24 bg-story-gradient">
       <div class="max-w-4xl mx-auto px-4 text-center">
         <h2
-          class="text-4xl font-bold mb-12 relative inline-block"
-          style="color: var(--burgundy)"
-        >
+          class="text-4xl font-bold mb-12 relative inline-block text-burgundy">
           The Heritage
           <span
-            class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-12 h-1 accent-line rounded-full"
-          ></span>
+            class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-12 h-1 accent-line rounded-full"></span>
         </h2>
         <p
-          class="text-xl leading-relaxed font-serif italic"
-          style="color: var(--dark-crimson)"
-        >
+          class="text-xl leading-relaxed font-serif italic text-dark-crimson">
           "At Wafuku, we don’t just sell garments; we carry the soul of Japan.
           Every stitch in our collection is a bridge between the ancient
           craftsmanship of Kyoto and the modern world. For centuries, the Kimono
@@ -147,261 +121,208 @@
     <section id="collections" class="py-24 bg-japan-cream">
       <div class="max-w-7xl mx-auto px-4">
         <h2
-          class="text-4xl font-bold mb-16 text-center relative inline-block w-full"
-          style="color: var(--burgundy)"
-        >
+          class="text-4xl font-bold mb-16 text-center relative inline-block w-full text-burgundy">
           Collections
           <span
-            class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-12 h-1 accent-line rounded-full"
-          ></span>
+            class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-12 h-1 accent-line rounded-full"></span>
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Card 1 -->
           <div
-            class="group cursor-pointer card-glow rounded-lg overflow-hidden"
-            style="background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px)"
-          >
+            class="group cursor-pointer card-glow rounded-lg overflow-hidden card-glass">
             <div class="overflow-hidden aspect-[3/4]">
               <img
                 src="https://images.unsplash.com/photo-1573456170607-b885fdc78985?auto=format&fit=crop&q=80&w=1000"
                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                alt="Yukata"
-              />
+                alt="Yukata" />
             </div>
             <div class="flex flex-col items-center text-center p-5">
-              <h3 class="text-xl font-bold uppercase tracking-wider" style="color: var(--burgundy)">
+              <h3 class="text-xl font-bold uppercase tracking-wider text-burgundy">
                 The Summer Yukata
               </h3>
-              <p class="text-japan-red text-sm mt-1">Lightweight Cotton • Seasonal Patterns</p>
+              <p class="text-japan-red text-sm mt-1">Lightweight Cotton •
+                Seasonal Patterns</p>
             </div>
           </div>
 
           <!-- Card 2 -->
           <div
-            class="group cursor-pointer card-glow rounded-lg overflow-hidden"
-            style="background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px)"
-          >
+            class="group cursor-pointer card-glow rounded-lg overflow-hidden card-glass-inline">
             <div class="overflow-hidden aspect-[3/4]">
               <img
                 src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&q=80&w=1000"
                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                alt="Haori"
-              />
+                alt="Haori" />
             </div>
             <div class="flex flex-col items-center text-center p-5">
-              <h3 class="text-xl font-bold uppercase tracking-wider" style="color: var(--burgundy)">
+              <h3 class="text-xl font-bold uppercase tracking-wider text-burgundy">
                 Street Haori
               </h3>
-              <p class="text-japan-red text-sm mt-1">Modern Fusion • Oversized Silhouette</p>
+              <p class="text-japan-red text-sm mt-1">Modern Fusion • Oversized
+                Silhouette</p>
             </div>
           </div>
 
           <!-- Card 3 -->
           <div
-            class="group cursor-pointer card-glow rounded-lg overflow-hidden"
-            style="background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px)"
-          >
+            class="group cursor-pointer card-glow rounded-lg overflow-hidden card-glass-inline">
             <div class="overflow-hidden aspect-[3/4]">
               <img
                 src="https://images.unsplash.com/photo-1549488497-23686f05991e?auto=format&fit=crop&q=80&w=1000"
                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                alt="Silk Kimono"
-              />
+                alt="Silk Kimono" />
             </div>
             <div class="flex flex-col items-center text-center p-5">
-              <h3 class="text-xl font-bold uppercase tracking-wider" style="color: var(--burgundy)">
+              <h3 class="text-xl font-bold uppercase tracking-wider text-burgundy">
                 Silk Kimono
               </h3>
-              <p class="text-japan-red text-sm mt-1">Authentic Craft • Hand-woven Heritage</p>
+              <p class="text-japan-red text-sm mt-1">Authentic Craft •
+                Hand-woven Heritage</p>
             </div>
           </div>
 
           <!-- Card 4 -->
           <div
-            class="group cursor-pointer card-glow rounded-lg overflow-hidden"
-            style="background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px)"
-          >
+            class="group cursor-pointer card-glow rounded-lg overflow-hidden card-glass-inline">
             <div class="overflow-hidden aspect-[3/4]">
               <img
                 src="https://images.unsplash.com/photo-1573456170607-b885fdc78985?auto=format&fit=crop&q=80&w=1000"
                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                alt="Yukata"
-              />
+                alt="Yukata" />
             </div>
             <div class="flex flex-col items-center text-center p-5">
-              <h3 class="text-xl font-bold uppercase tracking-wider" style="color: var(--burgundy)">
+              <h3 class="text-xl font-bold uppercase tracking-wider text-burgundy">
                 The Summer Yukata
               </h3>
-              <p class="text-japan-red text-sm mt-1">Lightweight Cotton • Seasonal Patterns</p>
+              <p class="text-japan-red text-sm mt-1">Lightweight Cotton •
+                Seasonal Patterns</p>
             </div>
           </div>
 
           <!-- Card 5 -->
           <div
-            class="group cursor-pointer card-glow rounded-lg overflow-hidden"
-            style="background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px)"
-          >
+            class="group cursor-pointer card-glow rounded-lg overflow-hidden card-glass-inline">
             <div class="overflow-hidden aspect-[3/4]">
               <img
                 src="https://images.unsplash.com/photo-1573456170607-b885fdc78985?auto=format&fit=crop&q=80&w=1000"
                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                alt="Yukata"
-              />
+                alt="Yukata" />
             </div>
             <div class="flex flex-col items-center text-center p-5">
-              <h3 class="text-xl font-bold uppercase tracking-wider" style="color: var(--burgundy)">
+              <h3 class="text-xl font-bold uppercase tracking-wider text-burgundy">
                 The Summer Yukata
               </h3>
-              <p class="text-japan-red text-sm mt-1">Lightweight Cotton • Seasonal Patterns</p>
+              <p class="text-japan-red text-sm mt-1">Lightweight Cotton •
+                Seasonal Patterns</p>
             </div>
           </div>
 
           <!-- Card 6 -->
           <div
-            class="group cursor-pointer card-glow rounded-lg overflow-hidden"
-            style="background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px)"
-          >
+            class="group cursor-pointer card-glow rounded-lg overflow-hidden card-glass-inline">
             <div class="overflow-hidden aspect-[3/4]">
               <img
                 src="https://images.unsplash.com/photo-1573456170607-b885fdc78985?auto=format&fit=crop&q=80&w=1000"
                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                alt="Yukata"
-              />
+                alt="Yukata" />
             </div>
             <div class="flex flex-col items-center text-center p-5">
-              <h3 class="text-xl font-bold uppercase tracking-wider" style="color: var(--burgundy)">
+              <h3 class="text-xl font-bold uppercase tracking-wider text-burgundy">
                 The Summer Yukata
               </h3>
-              <p class="text-japan-red text-sm mt-1">Lightweight Cotton • Seasonal Patterns</p>
+              <p class="text-japan-red text-sm mt-1">Lightweight Cotton •
+                Seasonal Patterns</p>
             </div>
           </div>
 
           <!-- Card 7 -->
           <div
-            class="group cursor-pointer card-glow rounded-lg overflow-hidden"
-            style="background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px)"
-          >
+            class="group cursor-pointer card-glow rounded-lg overflow-hidden card-glass-inline">
             <div class="overflow-hidden aspect-[3/4]">
               <img
                 src="https://images.unsplash.com/photo-1573456170607-b885fdc78985?auto=format&fit=crop&q=80&w=1000"
                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                alt="Yukata"
-              />
+                alt="Yukata" />
             </div>
             <div class="flex flex-col items-center text-center p-5">
-              <h3 class="text-xl font-bold uppercase tracking-wider" style="color: var(--burgundy)">
+              <h3 class="text-xl font-bold uppercase tracking-wider text-burgundy">
                 The Summer Yukata
               </h3>
-              <p class="text-japan-red text-sm mt-1">Lightweight Cotton • Seasonal Patterns</p>
+              <p class="text-japan-red text-sm mt-1">Lightweight Cotton •
+                Seasonal Patterns</p>
             </div>
           </div>
 
           <!-- Card 8 -->
           <div
-            class="group cursor-pointer card-glow rounded-lg overflow-hidden"
-            style="background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px)"
-          >
+            class="group cursor-pointer card-glow rounded-lg overflow-hidden card-glass-inline">
             <div class="overflow-hidden aspect-[3/4]">
               <img
                 src="https://images.unsplash.com/photo-1573456170607-b885fdc78985?auto=format&fit=crop&q=80&w=1000"
                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                alt="Yukata"
-              />
+                alt="Yukata" />
             </div>
             <div class="flex flex-col items-center text-center p-5">
-              <h3 class="text-xl font-bold uppercase tracking-wider" style="color: var(--burgundy)">
+              <h3 class="text-xl font-bold uppercase tracking-wider text-burgundy">
                 The Summer Yukata
               </h3>
-              <p class="text-japan-red text-sm mt-1">Lightweight Cotton • Seasonal Patterns</p>
+              <p class="text-japan-red text-sm mt-1">Lightweight Cotton •
+                Seasonal Patterns</p>
             </div>
           </div>
 
           <!-- Card 9 -->
           <div
-            class="group cursor-pointer card-glow rounded-lg overflow-hidden"
-            style="background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px)"
-          >
+            class="group cursor-pointer card-glow rounded-lg overflow-hidden card-glass-inline">
             <div class="overflow-hidden aspect-[3/4]">
               <img
                 src="https://images.unsplash.com/photo-1573456170607-b885fdc78985?auto=format&fit=crop&q=80&w=1000"
                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                alt="Yukata"
-              />
+                alt="Yukata" />
             </div>
             <div class="flex flex-col items-center text-center p-5">
-              <h3 class="text-xl font-bold uppercase tracking-wider" style="color: var(--burgundy)">
+              <h3 class="text-xl font-bold uppercase tracking-wider text-burgundy">
                 The Summer Yukata
               </h3>
-              <p class="text-japan-red text-sm mt-1">Lightweight Cotton • Seasonal Patterns</p>
+              <p class="text-japan-red text-sm mt-1">Lightweight Cotton •
+                Seasonal Patterns</p>
             </div>
           </div>
 
           <!-- Card 10 -->
           <div
-            class="group cursor-pointer card-glow rounded-lg overflow-hidden"
-            style="background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px)"
-          >
+            class="group cursor-pointer card-glow rounded-lg overflow-hidden card-glass-inline">
             <div class="overflow-hidden aspect-[3/4]">
               <img
                 src="https://images.unsplash.com/photo-1573456170607-b885fdc78985?auto=format&fit=crop&q=80&w=1000"
                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                alt="Yukata"
-              />
+                alt="Yukata" />
             </div>
             <div class="flex flex-col items-center text-center p-5">
-              <h3 class="text-xl font-bold uppercase tracking-wider" style="color: var(--burgundy)">
+              <h3 class="text-xl font-bold uppercase tracking-wider text-burgundy">
                 The Summer Yukata
               </h3>
-              <p class="text-japan-red text-sm mt-1">Lightweight Cotton • Seasonal Patterns</p>
+              <p class="text-japan-red text-sm mt-1">Lightweight Cotton •
+                Seasonal Patterns</p>
             </div>
           </div>
         </div>
-           <div
-            class="group cursor-pointer card-glow rounded-lg overflow-hidden"
-            style="
-              background: rgba(255, 255, 255, 0.6);
-              backdrop-filter: blur(8px);
-            "
-          >
-            <div class="overflow-hidden aspect-[3/4]">
-              <img
-                src="https://images.unsplash.com/photo-1573456170607-b885fdc78985?auto=format&fit=crop&q=80&w=1000"
-                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                alt="Yukata"
-              />
-            </div>
-            <div class="p-5">
-              <h3
-                class="text-xl font-bold uppercase tracking-wider"
-                style="color: var(--burgundy)"
-              >
-                The Summer Yukata
-              </h3>
-              <p class="text-japan-red text-sm mt-1">
-                Lightweight Cotton • Seasonal Patterns
-              </p>
-            </div>
-          </div>
       </div>
     </section>
 
     <footer id="contact" class="footer-gradient text-white py-16">
       <div class="max-w-7xl mx-auto px-4 text-center">
         <h2
-          class="text-3xl font-serif mb-8 text-gradient"
-          style="-webkit-text-fill-color: #fff0c4; color: #fff0c4"
-        >
+          class="text-3xl font-serif mb-8 text-gradient text-japan-cream-fill">
           WAFUKU
         </h2>
         <div
-          class="flex justify-center space-x-8 mb-10 text-sm tracking-widest uppercase"
-          style="color: rgba(255, 240, 196, 0.55)"
-        >
+          class="flex justify-center space-x-8 mb-10 text-sm tracking-widest uppercase text-japan-cream-55">
           <a href="#" class="hover:text-white transition">Instagram</a>
           <a href="#" class="hover:text-white transition">Pinterest</a>
           <a href="#" class="hover:text-white transition">Email Us</a>
         </div>
-        <p class="text-xs" style="color: rgba(255, 240, 196, 0.3)">
+        <p class="text-xs text-japan-cream-30">
           &copy; 2026 WAFUKU JAPAN. ALL RIGHTS RESERVED.
         </p>
       </div>
